@@ -20,10 +20,12 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', function (req, res, next) {
-    console.log(req.body.title);
-    console.log(req.body.word_from_input);
-    console.log(req.body.description);
+    //console.log(req.body.word_from_input);
+    //res.flash('info', 'test');
     res.send(`является ли слово палиндромом: ${isPalindrome(req.body.word_from_input)}`);
+    //res.send('<script>alert(isPalindrome(req.body.word_from_input))</script>');
+    //alert("test");
+    //console.log(isPalindrome(req.body.word_from_input));
 });
 
 module.exports = router;
