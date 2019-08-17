@@ -9,6 +9,14 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+app.get('/palindrome', function (req, res) {
+  res.send('test')
+});
+
+app.post('/palindrome', function (req, res) {
+  res.send('Got a POST request')
+});
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
