@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1= title
+    form(name="add-estimation", method="post")
+        div.input
+            span.label Найти число Фибоначчи, находящееся на позиции: 
+            input(type="number", name="num_from_input")
+        div.actions
+            input(type="submit", value="Отправить")
